@@ -5,13 +5,18 @@ if [[ "$ROOT_PATH" == "" ]]; then
   exit 3
 fi
 
+chmod 0000 "$ROOT_PATH/unreadable-file" "$ROOT_PATH/unwriteable-file" || {
+  echo "Could not change rights on testsuite files!"
+  exit 4
+}
+
 if [[ "$(hostname)" == "merlin.fit.vutbr.cz" ]]; then
   typeset IFS_backup=$IFS           # Backup of actual IFS for later restoration.
   IFS=$'\n'                         # New IFS for line operations below.
 
   cd ../../ || {
     echo "Script could not change into tests directory!"
-    kill $PPID
+    exit 5
   }
 
   for file_path in $(find . -type f -name cmd-given | sort); do
@@ -29,7 +34,7 @@ else
 
   if [[ $? != 0 ]]; then
     echo "The PHP CLI is probably not installed! Please, double-check it and try again!"
-    exit 4
+    exit 6
   fi
 fi
 

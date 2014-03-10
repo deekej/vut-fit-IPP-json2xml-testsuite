@@ -1,5 +1,11 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php --output="$ROOT_PATH"/unwriteable-file < /dev/null > script-output
+
+if [[ "$(hostname)" == "merlin.fit.vutbr.cz" ]]; then
+  php "$ROOT_PATH"/jsn.php --output=/etc/shadow < /dev/null > script-output
+else
+  php "$ROOT_PATH"/jsn.php --output="$ROOT_PATH"/unwriteable-file < /dev/null > script-output
+fi
+
 
 RET_VAL=$?
 

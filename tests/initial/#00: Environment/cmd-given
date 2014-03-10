@@ -5,11 +5,32 @@ if [[ "$ROOT_PATH" == "" ]]; then
   exit 3
 fi
 
-php < /dev/null
+if [[ "$(hostname)" == "merlin.fit.vutbr.cz" ]]; then
+  typeset IFS_backup=$IFS           # Backup of actual IFS for later restoration.
+  IFS=$'\n'                         # New IFS for line operations below.
 
-if [[ $? != 0 ]]; then
-  echo "The PHP CLI is probably not installed! Please, double-check it and try again!"
-  exit 4
+  cd ../../ || {
+    echo "Script could not change into tests directory!"
+    kill $PPID
+  }
+
+  for file_path in $(find . -type f -name cmd-given | sort); do
+    
+    # Changing 'cmd-given' scripts, so they can run on merlin server:
+    {
+      sed -i -r -e 's/php "\$ROOT_PATH"\/jsn\.php/php -d open_basedir="" "\$ROOT_PATH"\/jsn.php/g' "$file_path"
+    }
+    
+  done
+
+  IFS=$IFS_backup                   # Restoring IFS.
+else
+  php < /dev/null
+
+  if [[ $? != 0 ]]; then
+    echo "The PHP CLI is probably not installed! Please, double-check it and try again!"
+    exit 4
+  fi
 fi
 
 if [[ -r "$ROOT_PATH/jsn.php" && -f "$ROOT_PATH/jsn.php" && -s "$ROOT_PATH/jsn.php" ]]; then

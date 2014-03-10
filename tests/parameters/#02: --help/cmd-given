@@ -1,0 +1,14 @@
+#!/bin/bash
+php "$ROOT_PATH"/jsn.php --help > script-output
+
+RET_VAL=$?
+
+if [[ -s script-output ]]; then
+  echo "OK"
+else
+  echo "Help page is missing!"
+fi
+
+rm -f script-output
+
+exit $RET_VAL

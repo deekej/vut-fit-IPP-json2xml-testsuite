@@ -1,0 +1,2 @@
+#!/bin/sh
+php "$ROOT_PATH"/jsn.php < /dev/null

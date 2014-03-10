@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<array>
+    <item index="42" value="42" />
+    <item index="43" value="69" />
+    <item index="44" value="141" />
+    <item index="45" value="192" />
+    <item index="46" value="256" />
+    <item index="47" value="512" />
+    <item index="48" value="1024" />
+    <item index="49" value="2048" />
+    <item index="50" value="8192" />
+    <item index="51" value="16384" />
+    <item index="52" value="32768" />
+</array>

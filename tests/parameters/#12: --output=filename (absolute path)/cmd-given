@@ -1,0 +1,18 @@
+#!/bin/bash
+php "$ROOT_PATH"/jsn.php --input="$ROOT_PATH"/utf8-file --output="$ROOT_PATH"/filename
+
+RET_VAL=$?
+
+if [[ $RET_VAL -gt 0 ]]; then
+  echo "The script should work properly with absolute paths!"
+else
+  echo "OK"
+fi
+
+if [[ -s "$ROOT_PATH/filename" ]]; then
+  rm -f "$ROOT_PATH/filename"
+else
+  echo "The script didn't handle the absolute path for --output parameter!"
+fi
+
+exit $RET_VAL

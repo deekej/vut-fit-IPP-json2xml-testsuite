@@ -1,0 +1,61 @@
+#!/bin/bash
+php "$ROOT_PATH"/jsn.php -l < "$ROOT_PATH"/literals-transform > script-output
+
+RET_VAL=$?
+
+cat "$ROOT_PATH"/XML-header > valid_1
+cat "$ROOT_PATH"/XML-header > valid_2
+
+echo "<test1><true /></test1>
+<test2><false /></test2>
+<test3><null /></test3>
+<test4>
+    <array>
+        <item><true /></item>
+        <item><false /></item>
+        <item><null /></item>
+    </array>
+</test4>" >> valid_1
+
+echo "<test1>
+    <true />
+</test1>
+<test2>
+    <false />
+</test2>
+<test3>
+    <null />
+</test3>
+<test4>
+    <array>
+        <item>
+            <true />
+        </item>
+        <item>
+            <false />
+        </item>
+        <item>
+            <null />
+        </item>
+    </array>
+</test4>" >> valid_2
+
+
+if [[ $RET_VAL -gt 0 ]]; then
+  echo "The script should process this input without any error!"
+else
+  diff -upwB script-output valid_1 > delta_1
+  diff -upwB script-output valid_2 > delta_2
+
+  if [[ -s delta_1 && -s delta_2 ]]; then
+    echo "Wrong output format for -l parameter!"
+  else
+    echo "OK"
+  fi
+fi
+
+rm -f script-output valid_1 valid_2 delta_1 delta_2
+
+exit $RET_VAL
+
+

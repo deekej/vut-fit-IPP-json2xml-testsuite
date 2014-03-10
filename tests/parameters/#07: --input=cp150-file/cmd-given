@@ -1,0 +1,18 @@
+#!/bin/bash
+php "$ROOT_PATH"/jsn.php --input="$ROOT_PATH"/cp1250-file > script-output
+
+RET_VAL=$?
+
+if [[ $RET_VAL -gt 0 ]]; then
+  echo "OK"
+else
+  echo "The script runs even when the input file has wrong format!"
+fi
+
+if [[ -s script-output ]]; then
+  echo "Error message (even HELP) should not be printed to STDOUT in case of error!"
+fi
+
+rm -f script-output
+
+exit $RET_VAL

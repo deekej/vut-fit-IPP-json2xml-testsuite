@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test1 value="true" />
+<test2 value="false" />
+<test3 value="null" />
+<test4>
+    <array>
+        <item value="true" />
+        <item value="false" />
+        <item value="null" />
+    </array>
+</test4>

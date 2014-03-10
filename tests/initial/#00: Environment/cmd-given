@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [[ "$ROOT_PATH" == "" ]]; then
+  echo "The \$ROOT_PATH shell variable is not set!"
+  exit 3
+fi
+
+php < /dev/null
+
+if [[ $? != 0 ]]; then
+  echo "The PHP CLI is probably not installed! Please, double-check it and try again!"
+  exit 4
+fi
+
+if [[ -r "$ROOT_PATH/jsn.php" && -f "$ROOT_PATH/jsn.php" && -s "$ROOT_PATH/jsn.php" ]]; then
+  echo "OK"
+  exit 0
+else
+  echo "The 'jsn.php' is not present in '\$ROOT_PATH' or is not readable!"
+  exit 5
+fi

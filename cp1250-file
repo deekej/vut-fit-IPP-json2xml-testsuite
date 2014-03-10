@@ -1,0 +1,21 @@
+{
+    "firstName": "Tomáš",
+    "lastName": "Vávra",
+    "age": 25,
+    "address": {
+        "streetAddress": "Božetìchova 2",
+        "city": "Brnóóó",
+        "state": "Èeská republika",
+        "postalCode": 62100
+    },
+    "phoneNumbers": [
+        {
+            "type": "domù",
+            "number": "212 555-1234"
+        },
+        {
+            "type": "fax",
+            "number": "646 555-4567"
+        }
+    ]
+}

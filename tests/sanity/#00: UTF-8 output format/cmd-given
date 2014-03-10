@@ -1,0 +1,20 @@
+#!/bin/bash
+php "$ROOT_PATH"/jsn.php --input="$ROOT_PATH"/utf8-file > script-output
+
+RET_VAL=$?
+
+if [[ $RET_VAL -gt 0 ]]; then
+  echo "The script should proceed correctly with the UTF-8 file!"
+elif [[ "$(file -be soft script-output)" != "UTF-8 Unicode text" ]]; then
+  echo "The output of the script is not in UTF-8 format!"
+else
+  echo "OK"
+fi
+
+if [[ -s script-output ]]; then
+  rm script-output
+else
+  echo "The script has no output!"
+fi
+
+exit $RET_VAL

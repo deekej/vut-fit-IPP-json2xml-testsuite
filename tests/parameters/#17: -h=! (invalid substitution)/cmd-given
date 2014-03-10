@@ -1,0 +1,22 @@
+#!/bin/bash
+php "$ROOT_PATH"/jsn.php -h=! < "$ROOT_PATH"/subst-file > script-output
+
+RET_VAL=$?
+
+if [[ $RET_VAL -gt 0 ]]; then
+  echo "OK"
+else
+  echo "The script didn't recongnized invalid name of XML element!"
+fi
+
+diff -upwB script-output "$ROOT_PATH"/XML-header > delta
+
+if [[ -s delta ]]; then
+  echo "Error message (even HELP) should not be printed to STDOUT in case of error!"
+fi
+
+rm -f script-output delta
+
+exit $RET_VAL
+
+

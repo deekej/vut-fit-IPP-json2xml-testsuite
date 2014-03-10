@@ -1,0 +1,20 @@
+#!/bin/bash
+php "$ROOT_PATH"/jsn.php -n < /dev/null > script-output
+
+RET_VAL=$?
+
+if [[ $RET_VAL -gt 0 ]]; then
+  echo "The script didn't should proceed without any error!"
+else
+  echo "OK"
+fi
+
+if [[ -s script-output ]]; then
+  echo "There should be empty output with -n and empty input!"
+fi
+
+rm -f script-output
+
+exit $RET_VAL
+
+

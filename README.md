@@ -4,6 +4,9 @@
 # Author: Dee'Kej
 # E-mail: deekej@linuxmail.org
 #
+# WARNING:    Do NOT USE this testsuite with superuser (ROOT) rights!!!
+#             (You might seriously damage your system.)
+#
 # Copyright:  GNUv2 License
 # Disclaimer: By using this software you accept the License agreement and
 #             acknowledge, that author of this software can't be responsible

@@ -1,30 +1,24 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php -r=root-element < /dev/null > script-output
+php "$ROOT_PATH"/jsn.php -r=root-element < "$ROOT_PATH"/minimal-json > script-output
 
 RET_VAL=$?
 
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<root-element />" > correct-output_1
-echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<root-element>
-</root-element>" > correct-output_2
-
+<root-element />" > correct-output
 
 if [[ $RET_VAL -gt 0 ]]; then
   echo "The script should proceed correctly with the root element"
 elif ! [[ -s script-output ]]; then
   echo "The script has no output!"
-else 
-  diff -upwB correct-output_1 script-captured > delta_1 2>/dev/null
-  diff -upwB correct-output_2 script-captured > delta_2 2>/dev/null
+else
+  "$ROOT_PATH"/jexamxml.sh "$(pwd)" correct-output script-output
 
-  if [[ -s delta_1 && -s delta_2 ]]; then
-    echo "Wrong output for -r=root-element!"
+  if [[ $? != 0 ]]; then
+    echo "Wrong output for -r=root-element! See the delta.xml file."
   else
+    rm -f correct-output script-output delta.xml
     echo "OK"
   fi
 fi
-
-rm -f correct-output_1 correct-output_2 delta_1 delta_2 script-output
 
 exit $RET_VAL

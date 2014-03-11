@@ -1,2 +1,28 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php < "$ROOT_PATH"/problematic-characters
+php "$ROOT_PATH"/jsn.php < "$ROOT_PATH"/problematic-characters | tr -d '\n' > script-output
+
+RET_VAL=$?
+
+echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<test1 value=\"<\"Dee'Kej!\">\" />
+<test2>
+    <array>
+        <item value=\"<\"Dee'Kej!\">\" />
+    </array>
+</test2>" | tr -d '\n' > valid-output
+
+if [[ $RET_VAL -gt 0 ]]; then
+  echo "The script should process this input without any error!"
+else
+  diff -upwB valid-output script-output > delta
+
+  if [[ -s delta ]]; then
+    echo "Wrong output format! See the valid-output & script-output (both have their '\\n' removed)."
+  else
+    rm -f valid-output script-output delta
+    echo "OK"
+  fi
+fi
+
+exit $RET_VAL
+

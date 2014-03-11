@@ -1,2 +1,47 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php --index-items < "$ROOT_PATH"/array
+php "$ROOT_PATH"/jsn.php --index-items < "$ROOT_PATH"/array > script-output
+
+RET_VAL=$?
+
+cat "$ROOT_PATH"/XML-header > valid-output
+
+echo "<root>
+    <array>
+        <item index=\"1\" value=\"42\" />
+        <item index=\"2\" value=\"69\" />
+        <item index=\"3\" value=\"141\" />
+        <item index=\"4\" value=\"192\" />
+        <item index=\"5\" value=\"256\" />
+        <item index=\"6\" value=\"512\" />
+        <item index=\"7\" value=\"1024\" />
+        <item index=\"8\" value=\"2048\" />
+        <item index=\"9\" value=\"8192\" />
+        <item index=\"10\" value=\"16384\" />
+        <item index=\"11\" value=\"32768\" />
+    </array>
+</root>" >> valid-output
+
+if [[ $RET_VAL -gt 0 ]]; then
+  echo "The script should process this input without any error!"
+else
+  # NOTE: We're injecting <root> & </root> elements so the JExamXML will not
+  #       report an error that the XML is not well-formed.
+  cat "$ROOT_PATH"/XML-header > script-output.tmp
+  echo "<root>" >> script-output.tmp
+  tail -n +2 script-output >> script-output.tmp
+  cat script-output.tmp > script-output
+  echo "</root>" >> script-output
+  
+  rm -f script-output.tmp
+
+  "$ROOT_PATH"/jexamxml.sh "$(pwd)" valid-output script-output
+
+  if [[ $? != 0 ]]; then
+    echo "Wrong output format for --index-items parameter! See the delta.xml file."
+  else
+    rm -f valid-output script-output delta.xml
+    echo "OK"
+  fi
+fi
+
+exit $RET_VAL

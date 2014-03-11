@@ -17,10 +17,17 @@
 #             still be present! Even though the best possible effort has been
 #             made to find all inconsistencies.
 #
-# NOTE:       This testsuite uses modified shell script written by Dee'Kej, which
+# Utility:    This testsuite uses modified shell script written by Dee'Kej, which
 #             was also the university project @ BUT FIT. You can find more info
 #             about this project and how to use the shell script @:
 #             https://bitbucket.org/deekej/but-fit-ios-2012-project-1
+#
+# JExamXML:   This testsuite moved to use freely accessible program for examimg
+#             if the 2 or more XML files are same - JExamXML. It has it's own
+#             copyrights, which are fully reserved. I don't claim any of it's
+#             rights because it apparently belongs to A7Soft company - copyright
+#             2007 - 2010. For more info or download of this Java program, visit:
+#             http://www.a7soft.com/jexamxml.html
 #
 # HOW TO USE IT:
 # 1. Extract the archive / clone the repository to yourself.
@@ -31,14 +38,10 @@
 # 5. Run the testsuite: ./runtests.sh -t tests/
 # 6. Results should be printed to terminal.
 #
-# NOTE_2: If any test fail, you can go into 'tests' directory, find the failed
+# NOTE:   If any test fail, you can go into 'tests' directory, find the failed
 #         test directory and see the 'cmd-given' script and tests expected &
-#         captured results.
+#         captured results to see it it's a false-positive or not. In case
+#         you find the false positive, please, do report them. Thank you!
 #
-# NOTE_3: Because diff utility is used for the testing, the testsuite expects
-#         that every JSON->XML element will be printed with trailing '\n'
-#         character. It also expects descending 1:1 conversion - in other words,
-#         the testsuite's tests will FAIL in case you don't have same order of
-#         elements as it is in input JSON file.
-#
-# If you find any bug, please, feel free to inform me and I will try to fix it.
+# THANKS: Thanks goes to Stano and Proofy - for helping me testing & improving
+#         the testsuite.

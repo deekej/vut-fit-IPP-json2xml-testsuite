@@ -1,5 +1,5 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php --input="$ROOT_PATH"/utf8-file --output="$ROOT_PATH"/filename
+php "$ROOT_PATH"/jsn.php --output="$ROOT_PATH"/filename < "$ROOT_PATH"/minimal-json
 
 RET_VAL=$?
 

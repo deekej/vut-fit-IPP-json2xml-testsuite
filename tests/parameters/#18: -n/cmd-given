@@ -1,19 +1,19 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php -n < /dev/null > script-output
+php "$ROOT_PATH"/jsn.php -n < "$ROOT_PATH"/minimal-json > script-output
 
 RET_VAL=$?
 
 if [[ $RET_VAL -gt 0 ]]; then
-  echo "The script didn't should proceed without any error!"
+  echo "The script should proceed without any error!"
 else
   echo "OK"
 fi
 
 if [[ -s script-output ]]; then
-  echo "There should be empty output with -n and empty input!"
+  echo "There should be empty output with -n (and empty input)!"
+else
+  rm -f script-output
 fi
-
-rm -f script-output
 
 exit $RET_VAL
 

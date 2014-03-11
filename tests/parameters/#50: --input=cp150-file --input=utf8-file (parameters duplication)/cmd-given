@@ -1,12 +1,12 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php --output= < "$ROOT_PATH"/minimal-json > script-output
+php "$ROOT_PATH"/jsn.php --input="$ROOT_PATH"/cp1250-file --input="$ROOT_PATH"/utf8-file > script-output
 
 RET_VAL=$?
 
 if [[ $RET_VAL -gt 0 ]]; then
   echo "OK"
 else
-  echo "The script run even when the output file was not properly specified!"
+  echo "The duplication of parameters is not allowed!"
 fi
 
 if [[ -s script-output ]]; then
@@ -16,3 +16,4 @@ else
 fi
 
 exit $RET_VAL
+

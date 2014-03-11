@@ -20,7 +20,6 @@ if [[ "$(hostname)" == "merlin.fit.vutbr.cz" ]]; then
   }
 
   for file_path in $(find . -type f -name cmd-given | sort); do
-    
     # Changing 'cmd-given' scripts, so they can run on merlin server:
     {
       sed -i -r -e 's/php "\$ROOT_PATH"\/jsn\.php/php -d open_basedir="" "\$ROOT_PATH"\/jsn.php/g' "$file_path"
@@ -38,10 +37,18 @@ else
   fi
 fi
 
-if [[ -r "$ROOT_PATH/jsn.php" && -f "$ROOT_PATH/jsn.php" && -s "$ROOT_PATH/jsn.php" ]]; then
-  echo "OK"
-  exit 0
-else
-  echo "The 'jsn.php' is not present in '\$ROOT_PATH' or is not readable!"
+"$ROOT_PATH"/jexamxml.sh "$(pwd)" "" ""
+
+if [[ $? != 2 ]]; then
+  echo "The Java CLI is either missing or JExamXML files are corrupted!"
   exit 5
 fi
+
+if ! [[ -r "$ROOT_PATH/jsn.php" && -f "$ROOT_PATH/jsn.php" && -s "$ROOT_PATH/jsn.php" ]]; then
+  echo "The 'jsn.php' is not present in '\$ROOT_PATH' or is not readable!"
+  exit 6
+fi
+
+echo "OK"
+
+exit 0

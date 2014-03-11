@@ -1,2 +1,19 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php --start=10000000000000000000 -t < "$ROOT_PATH"/array
+php "$ROOT_PATH"/jsn.php --start=10000000000000000000 -t < "$ROOT_PATH"/array > script-output
+
+RET_VAL=$?
+
+if [[ $RET_VAL -gt 0 ]]; then
+  echo "OK"
+else
+  echo "The script accepted --start value bigger than INT_MAX value. Is testing for float numbers missing?"
+fi
+
+if [[ -s script-output ]]; then
+  echo "Error message (even HELP) should not be printed to STDOUT in case of error!"
+else
+  rm -f script-output
+fi
+
+exit $RET_VAL
+

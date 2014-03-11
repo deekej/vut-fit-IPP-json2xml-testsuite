@@ -1,5 +1,5 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php --start= > script-output
+php "$ROOT_PATH"/jsn.php --start= < "$ROOT_PATH"/minimal-json > script-output
 
 RET_VAL=$?
 
@@ -11,9 +11,9 @@ fi
 
 if [[ -s script-output ]]; then
   echo "Error message (even HELP) should not be printed to STDOUT in case of error!"
+else
+  rm -f script-output
 fi
-
-rm -f script-output
 
 exit $RET_VAL
 

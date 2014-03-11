@@ -1,7 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<test1 value="42" />
-<test2>
-    <array>
-        <item value="69" />
-    </array>
-</test2>
+OK

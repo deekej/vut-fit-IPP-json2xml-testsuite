@@ -1,14 +1,14 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php --help > script-output
+php "$ROOT_PATH"/jsn.php --help < "$ROOT_PATH"/minimal-json > script-output
 
 RET_VAL=$?
 
 if [[ -s script-output ]]; then
   echo "OK"
+  rm -f script-output
 else
   echo "Help page is missing!"
 fi
 
-rm -f script-output
 
 exit $RET_VAL

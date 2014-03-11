@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<array size="11">
-    <item value="42" />
-    <item value="69" />
-    <item value="141" />
-    <item value="192" />
-    <item value="256" />
-    <item value="512" />
-    <item value="1024" />
-    <item value="2048" />
-    <item value="8192" />
-    <item value="16384" />
-    <item value="32768" />
-</array>
+OK

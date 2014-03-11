@@ -1,11 +1,10 @@
 #!/bin/bash
 
 if [[ "$(hostname)" == "merlin.fit.vutbr.cz" ]]; then
-  php "$ROOT_PATH"/jsn.php --output=/etc/shadow < /dev/null > script-output
+  php "$ROOT_PATH"/jsn.php --output=/etc/shadow  < "$ROOT_PATH"/minimal-json > script-output
 else
-  php "$ROOT_PATH"/jsn.php --output="$ROOT_PATH"/unwriteable-file < /dev/null > script-output
+  php "$ROOT_PATH"/jsn.php --output="$ROOT_PATH"/unwriteable-file  < "$ROOT_PATH"/minimal-json > script-output
 fi
-
 
 RET_VAL=$?
 
@@ -17,8 +16,8 @@ fi
 
 if [[ -s script-output ]]; then
   echo "Error message (even HELP) should not be printed to STDOUT in case of error!"
+else
+  rm -f script-output
 fi
-
-rm -f script-output
 
 exit $RET_VAL

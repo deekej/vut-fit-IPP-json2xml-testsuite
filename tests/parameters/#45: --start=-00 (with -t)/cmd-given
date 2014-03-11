@@ -1,5 +1,5 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php --start=-00 -t < "$ROOT_PATH"/array > script-output
+php "$ROOT_PATH"/jsn.php --start=-00 -t < "$ROOT_PATH"/data/parameters/array > script-output
 
 RET_VAL=$?
 

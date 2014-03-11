@@ -1,5 +1,5 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php --start=NAN -t < "$ROOT_PATH"/minimal-json > script-output
+php "$ROOT_PATH"/jsn.php --start=NAN -t < "$ROOT_PATH"/data/parameters/minimal-json > script-output
 
 RET_VAL=$?
 

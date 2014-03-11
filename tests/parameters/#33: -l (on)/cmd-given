@@ -1,5 +1,5 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php -l < "$ROOT_PATH"/literals-transform > script-output
+php "$ROOT_PATH"/jsn.php -l < "$ROOT_PATH"/data/parameters/literals-transform > script-output
 
 RET_VAL=$?
 

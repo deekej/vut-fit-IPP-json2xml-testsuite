@@ -1,5 +1,5 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php --input=../../../utf8-file > script-output
+php "$ROOT_PATH"/jsn.php --input=../../../data/parameters/utf8-file > script-output
 
 RET_VAL=$?
 

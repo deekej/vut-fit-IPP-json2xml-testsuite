@@ -1,5 +1,5 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php --input="$ROOT_PATH"/cp1250-file --input="$ROOT_PATH"/utf8-file > script-output
+php "$ROOT_PATH"/jsn.php --input="$ROOT_PATH"/data/parameters/cp1250-file --input="$ROOT_PATH"/data/parameters/utf8-file > script-output
 
 RET_VAL=$?
 

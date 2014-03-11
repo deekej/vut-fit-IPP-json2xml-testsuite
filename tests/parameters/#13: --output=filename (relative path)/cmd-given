@@ -1,5 +1,5 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php --output=../../../filename < "$ROOT_PATH"/minimal-json
+php "$ROOT_PATH"/jsn.php --output=../../../data/parameters/filename < "$ROOT_PATH"/data/parameters/minimal-json
 
 RET_VAL=$?
 
@@ -9,8 +9,8 @@ else
   echo "OK"
 fi
 
-if [[ -s "$ROOT_PATH/filename" ]]; then
-  rm -f "$ROOT_PATH/filename"
+if [[ -s "$ROOT_PATH/data/parameters/filename" ]]; then
+  rm -f "$ROOT_PATH/data/parameters/filename"
 else
   echo "The script didn't handle the relative path for --output parameter!"
 fi

@@ -1,5 +1,5 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php --array-name=pole < "$ROOT_PATH"/simple-array > script-output
+php "$ROOT_PATH"/jsn.php --array-name=pole < "$ROOT_PATH"/data/parameters/simple-array > script-output
 
 RET_VAL=$?
 

@@ -1,5 +1,5 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php -c < "$ROOT_PATH"/problematic-characters > script-output
+php "$ROOT_PATH"/jsn.php -c < "$ROOT_PATH"/data/parameters/problematic-characters > script-output
 
 RET_VAL=$?
 

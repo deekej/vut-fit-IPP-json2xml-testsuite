@@ -1,9 +1,9 @@
 #!/bin/bash
 
 if [[ "$(hostname)" == "merlin.fit.vutbr.cz" ]]; then
-  php "$ROOT_PATH"/jsn.php --output=/etc/shadow  < "$ROOT_PATH"/minimal-json > script-output
+  php "$ROOT_PATH"/jsn.php --output=/etc/shadow  < "$ROOT_PATH"/data/parameters/minimal-json > script-output
 else
-  php "$ROOT_PATH"/jsn.php --output="$ROOT_PATH"/unwriteable-file  < "$ROOT_PATH"/minimal-json > script-output
+  php "$ROOT_PATH"/jsn.php --output="$ROOT_PATH"/data/parameters/unwriteable-file  < "$ROOT_PATH"/data/parameters/minimal-json > script-output
 fi
 
 RET_VAL=$?

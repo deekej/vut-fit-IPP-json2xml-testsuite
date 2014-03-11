@@ -1,5 +1,5 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php --help -n < "$ROOT_PATH"/minimal-json > script-output
+php "$ROOT_PATH"/jsn.php --help -n < "$ROOT_PATH"/data/parameters/minimal-json > script-output
 
 RET_VAL=$?
 

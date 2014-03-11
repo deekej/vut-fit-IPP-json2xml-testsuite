@@ -1,5 +1,5 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php < "$ROOT_PATH"/subst-file > script-output
+php "$ROOT_PATH"/jsn.php < "$ROOT_PATH"/data/parameters/subst-file > script-output
 
 RET_VAL=$?
 

@@ -1,5 +1,5 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php --array-size < "$ROOT_PATH"/array > script-output
+php "$ROOT_PATH"/jsn.php --array-size < "$ROOT_PATH"/data/parameters/array > script-output
 
 RET_VAL=$?
 

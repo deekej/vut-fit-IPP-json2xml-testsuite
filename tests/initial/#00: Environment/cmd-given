@@ -5,7 +5,7 @@ if [[ "$ROOT_PATH" == "" ]]; then
   exit 3
 fi
 
-chmod 0000 "$ROOT_PATH/unreadable-file" "$ROOT_PATH/unwriteable-file" || {
+chmod 0000 "$ROOT_PATH/data/parameters/unreadable-file" "$ROOT_PATH/data/parameters/unwriteable-file" || {
   echo "Could not change rights on testsuite files!"
   exit 4
 }

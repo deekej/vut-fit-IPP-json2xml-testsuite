@@ -1,5 +1,5 @@
 #!/bin/bash
-php "$ROOT_PATH"/jsn.php --output="$ROOT_PATH"/filename < "$ROOT_PATH"/minimal-json
+php "$ROOT_PATH"/jsn.php --output="$(pwd)"/filename < "$ROOT_PATH"/data/parameters/minimal-json
 
 RET_VAL=$?
 
@@ -9,8 +9,8 @@ else
   echo "OK"
 fi
 
-if [[ -s "$ROOT_PATH/filename" ]]; then
-  rm -f "$ROOT_PATH/filename"
+if [[ -s "$(pwd)/filename" ]]; then
+  rm -f "$(pwd)/filename"
 else
   echo "The script didn't handle the absolute path for --output parameter!"
 fi

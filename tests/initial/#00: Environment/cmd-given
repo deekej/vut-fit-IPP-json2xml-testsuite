@@ -37,6 +37,8 @@ else
   fi
 fi
 
+chmod +x "$ROOT_PATH"/jexamxml.sh
+
 "$ROOT_PATH"/jexamxml.sh "$(pwd)" "" ""
 
 if [[ $? != 2 ]]; then

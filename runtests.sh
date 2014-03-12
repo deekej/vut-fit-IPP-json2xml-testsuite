@@ -290,6 +290,7 @@ function run_tests
     
     # Run the 'cmd-given' file and capture its results:
     {
+      chmod +x ./cmd-given
       ./cmd-given <"$file_input" >stdout-captured 2>stderr-captured;
       echo "$?" >'status-captured';
     }

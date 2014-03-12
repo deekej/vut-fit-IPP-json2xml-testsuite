@@ -34,9 +34,10 @@
 # 2. Copy your 'jsn.php' script into the testsuite's root directory or add a
 #    symlink to your script there.
 # 3. Open terminal and move to the tetsuite's root directory.
-# 4. Run this command:  export ROOT_PATH="$(pwd)"
-# 5. Run the testsuite: ./runtests.sh -t tests/
-# 6. Results should be printed to terminal.
+# 4. Make testsuite executable by running:  chmod +x ./runtests.sh
+# 5. Run this command:                      export ROOT_PATH="$(pwd)"
+# 6. Run the testsuite:                     ./runtests.sh -t tests/
+# 7. Results should be printed to terminal.
 #
 # NOTE:   If any test fail, you can go into 'tests' directory, find the failed
 #         test directory and see the 'cmd-given' script and tests expected &

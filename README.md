@@ -43,5 +43,22 @@
 #         captured results to see it it's a false-positive or not. In case
 #         you find the false positive, please, do report them. Thank you!
 #
+# FAQ:
+# ----
+# Q:      Every test have failed, what is wrong?
+# A:      You probably have made some mistake during testsuite initialization.
+#         Repeat the procedure. If there's no change, switch into folder:
+#         /tests/initial/#00 Environment
+#         And examine the stdout-captured & stderr-captured. It should give you
+#         hint if some requirements are missing and how to fix it.
+#
+# Q:      I got './cmd-given: Permission denied' error. What should I do?
+# A:      You probably lost tests attributes during copying/uploading.
+#         Run in testsuite root directory: ./runtests -v tests/
+#         It will show you which tests are broken. If the required execution
+#         attribute is missing - switch to the test directory and run:
+#         chmod +x cmd-given
+#         Then, try again! ;)
+#
 # THANKS: Thanks goes to Stano and Proofy - for helping me testing & improving
 #         the testsuite.

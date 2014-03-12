@@ -1,0 +1,27 @@
+#!/bin/bash
+php "$ROOT_PATH"/jsn.php -i -h=xyz --input="$ROOT_PATH"/data/tests-official/16.jsn --output=script-output
+
+RET_VAL=$?
+
+if [[ $RET_VAL -gt 0 ]]; then
+  echo "The script should process this input without any error!"
+else
+  # NOTE: Injecting <root></root> elements, so the XML documents are well formed.
+  head -n 1 script-output > script-output.tmp
+  head -n 1 stdout-expected > stdout-expected.tmp
+  echo "<root>" | tee -a script-output.tmp >> stdout-expected.tmp
+  tail -n +2 script-output >> script-output.tmp
+  tail -n +2 stdout-expected >> stdout-expected.tmp
+  echo "</root>" | tee -a script-output.tmp >> stdout-expected.tmp
+
+  "$ROOT_PATH"/jexamxml.sh "$(pwd)" stdout-expected.tmp script-output.tmp
+
+  if [[ $? != 0 ]]; then
+    echo "Wrong XML output! See the delta.xml file."
+  else
+    rm -f script-output* stdout-expected.tmp delta.xml
+    cp stdout-expected stdout-captured
+  fi
+fi
+
+exit $RET_VAL

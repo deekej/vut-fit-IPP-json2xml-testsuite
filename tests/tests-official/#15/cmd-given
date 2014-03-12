@@ -1,0 +1,2 @@
+#!/bin/bash
+php "$ROOT_PATH"/jsn.php --array-name="b<a>d" --input="$ROOT_PATH"/data/tests-official/15.jsn --output=script-output

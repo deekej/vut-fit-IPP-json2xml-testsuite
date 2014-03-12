@@ -1,0 +1,24 @@
+#!/bin/bash
+php "$ROOT_PATH"/jsn.php -r="root" --input="$ROOT_PATH"/data/tests-official/14.jsn --output=script-output
+
+RET_VAL=$?
+
+if [[ $RET_VAL -gt 0 ]]; then
+  echo "OK"
+else
+  echo "The script didn't recongnized invalid name of XML element for -h parameter after substitution!"
+fi
+
+cat "$ROOT_PATH"/data/parameters/XML-header > valid-output
+echo "<root>" >> valid-output
+
+diff -upwB script-output valid-output > delta
+
+if [[ -s script-output || -s delta ]]; then
+  rm -f script-output valid-output delta
+else
+  echo "Error message (even HELP) should not be printed to STDOUT in case of error!"
+fi
+
+exit $RET_VAL
+

@@ -3,7 +3,7 @@ php "$ROOT_PATH"/jsn.php < "$ROOT_PATH"/data/parameters/number-transform > scrip
 
 RET_VAL=$?
 
-cat "$ROOT_PATH"/XML-header > valid-output
+cat "$ROOT_PATH"/data/parameters/XML-header > valid-output
 
 echo "<root>
     <test1 value=\"42\" />
@@ -19,7 +19,7 @@ if [[ $RET_VAL -gt 0 ]]; then
 else
   # NOTE: We're injecting <root> & </root> elements so the JExamXML will not
   #       report an error that the XML is not well-formed.
-  cat "$ROOT_PATH"/XML-header > script-output.tmp
+  cat "$ROOT_PATH"/data/parameters/XML-header > script-output.tmp
   echo "<root>" >> script-output.tmp
   tail -n +2 script-output >> script-output.tmp
   cat script-output.tmp > script-output

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <title value="Commander" />
+    <First-name value="Jane" />
+    <Middle-name value="" />
+    <Last-name value="Shepard" />
+    <Species value="Human" />
+    <Sex value="Female" />
+    <Born value="Aprill 11, 2154" />
+    <Age value="29" />
+    <Age_Note value="Missing 2 years due to death, should be 31.5" />
+    <Still-Alive value="true" />
+    <Birth-Place value="Earth" />
+    <Parents value="Unknown, raised in UNAS Orphanage until age of fifteen." />
+    <Sibling value="null" />
+    <Appearance>
+        <Height value="5&apos;9&quot;" />
+        <Hair-Color value="Mahogany" />
+        <Eye-Color value="Light Grey" />
+        <Skin-Tone value="Medium Fair" />
+        <Shoe-Size value="39" />
+        <Scars value="false" />
+    </Appearance>
+    <Religious-Preference value="Non-denominational" />
+    <Philosophical-Ideas value="Life is shit. It&apos;s those that can push past the shit barrier that make it in this universe as true leaders, instead of just being another sheep in our growing herd. There is no afterlife, just this one chance to make our mark on the world/s, so use it wisely and keep trying. Remember that the only person stopping you from reaching the top is yourself, and yourself alone. It&apos;s not your teachers, superiors, friends, parents, whoever. Just you. So stop over analyzing every little thing you do, and get your ass out there and do something!" />
+    <Favorites>
+        <Color value="Turquoise" />
+        <Scent value="Cut grass after a heavy rain" />
+        <Number value="42" />
+        <Food value="MRE Menu #19: Pot Roast w/Vegetables (Taken from surveillance footage during Basic Training: &quot;Pot roast, pound cake, peanut butter, and chocolate! Epic win!&quot;)" />
+    </Favorites>
+    <Education>
+        <High-School-GPA value="2" />
+        <High-School-Note value="Claimed that school was boring and a waist of her time." />
+        <ASVAB-Score value="75" />
+        <ASVAB-Score-Note value="&quot;I&apos;m not stupid,&quot;, Shepard justifying her score to Alliance Recruter. &quot;I just got bored in school. I already knew hald the shit they were spewing and repeating over and over again. If they wanted to be lazy while teachin, I could be lazy with listening. Besided, all the inf was in the text.&quot;" />
+    </Education>
+    <Alliance-Affiliation>
+        <Joined value="April 12, 2172" />
+        <Service-No value="5923-AC&apos;2826 &amp;N7" />
+        <Pre-Alliance-History value="Little is known about Shepard before she joined the Alliance. What is known is that she was a part of a group called the Reds while on Earth. She was also a suspect for the murder of Alfred J. Phillips when she was 16. The charges were dropped due to the murder being committed in self defiance to prevent her own rape. When she reached age 18, all accounts of the incident were expunged from her record. (Footage and record of file here.)" />
+        <Reasons-for-Joining-Alliance value="Footage taken from Alliance Recruitment Station: Shepard sitting across from Recruiter while discussing a career with the Alliance, &quot;I could lie to you and tell you that I want structure in my life, as well as the opportunity to interact with different species from all across the galaxy; but really, I just want something that guarantees me a hot meal three times a day. I&apos;ve been living on half eaten paste tubes for the past three years. Actual food would be welcome. Combine that with weapon and hand-to-hand combat training, who could say no to the Alliance?&quot;" />
+    </Alliance-Affiliation>
+    <Profile>
+        <Class value="Infiltrator (Quoted saying, &quot;I cannot lie, I like big guns.&quot;)" />
+        <Alliance-Psychological-Profile>
+            <Early-Enlistment value="Taken from datapad of one, Robert J. Yerkes, &quot;Miss. Shepard is eager to prove and further herself in every way she can. She has proven to be assertive and a natural leader. Yet, her DS mentioned to hearing her laugh hysterically at the firing range and during G-Training. When confronted on this, she commented that, &apos;This is the most fun I&apos;ve had in my entire life!&apos; She should be closely watched for possible mental instabilities.&quot;" />
+            <First-Mission-Post-Basics value="Sole Survivor, due to thresher maw attack in a small colony on Akuze; 2177, Age: 23. (Taken from vid with therapist about incident: &quot;After my panic gave way to adrenalin, I just unloaded as many rounds into the thing as I could and hoped for the best. Oh, and a grenade launcher and some rockets helped, a-lot.&quot;)" />
+            <Personality value="Compromiser; only slightly more Paragon than Renegade. (Loyal to the Alliance and her crew, everyone else is seen as fair game regardless of gender. Other note: She refuses to harm children, even if said children are sent to kill her. This does not mean she will lie down, &quot;maiming is not the same as killing.&quot; Shepard also has issues with people who do not take her seriously. Refer to footage taken during Council interactions.)" />
+        </Alliance-Psychological-Profile>
+        <Spectre-Status value="Appointed the first Human Spectre in 2183; Age: 29. Revoked later that year due to death. Reinstated in 2185." />
+        <Achievements value="Graduated with the highest marks in Basic, AIT, and N7 training on record, Survived a thresher maw attack on Akuze , First Human Specter, Saved Council during fight with Sovren (reasoning for this: &quot;It&apos;s easier to save a few morons than it is to listen to thousands more, for years, as they compete for the position.&quot;), Savior of the Citadel, and took out a Collector base without losing anyone in her squad or crew." />
+        <Special-Talents value="Has an impressive memory for memorizing a battlefield and using it to her advantage within seconds of engaging an enemy. Also has a knack for mechanical functioning and maintenance." />
+        <Death value="KIA in 2183 due to Collector contact. Cerberus brought her back to life with the Lazarus Project in 2185." />
+    </Profile>
+    <Armor-Used-to-Date>
+        <array>
+            <item value="true" />
+            <item value="Sentry Interface" />
+            <item value="Capacitor Chestplate" />
+            <item value="Asymetric Defense Layer" />
+            <item value="Off-Hand Ammo Pack" />
+            <item value="Ordinance Packs" />
+            <item>
+                <Name value="Armor Coloring" />
+                <Primary value="Black" />
+                <Secondary value="Deep Maroon" />
+                <Trim value="Red" />
+                <Note value="When asked &quot;why&quot; on color scheme: &quot;So, the blood stains aren&apos;t so vibrant? Duh.&quot;" />
+            </item>
+        </array>
+    </Armor-Used-to-Date>
+    <Weapons-Used-to-Date>
+        <array>
+            <item>
+                <Type value="Heavy Pistol" />
+                <Name value="M-6 Carnifex" />
+                <Note value="null" />
+            </item>
+            <item>
+                <Type value="Heavy Weapon" />
+                <Name value="Collector Particle Beam" />
+                <Note value="Third favorite weapon." />
+            </item>
+            <item>
+                <Type value="Shotgun" />
+                <Name value="M-300 Claymore" />
+                <Note value="null" />
+            </item>
+            <item>
+                <Type value="Sniper Rifle" />
+                <Name value="M-98 Widow" />
+                <Note value="Favorite weapon" />
+            </item>
+            <item>
+                <Type value="Submachine Gun" />
+                <Name value="M-12 Locust" />
+                <Note value="Second favorite weapon" />
+            </item>
+            <item value="null" />
+        </array>
+    </Weapons-Used-to-Date>
+</root>

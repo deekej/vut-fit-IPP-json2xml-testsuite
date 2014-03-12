@@ -1,0 +1,19 @@
+#!/bin/bash
+php "$ROOT_PATH"/jsn.php -r=root -c --array-name=list -a -s -i -l < "$ROOT_PATH"/data/test-cases/shepard-dossier > script-output
+
+RET_VAL=$?
+
+if [[ $RET_VAL -gt 0 ]]; then
+  echo "The script should process this input without any error!"
+else
+  "$ROOT_PATH"/jexamxml.sh "$(pwd)" stdout-expected script-output
+
+  if [[ $? != 0 ]]; then
+    echo "Wrong XML output! See the delta.xml file."
+  else
+    rm -f script-output delta.xml
+    cp stdout-expected stdout-captured
+  fi
+fi
+
+exit $RET_VAL

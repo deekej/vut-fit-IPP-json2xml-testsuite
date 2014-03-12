@@ -1,0 +1,116 @@
+<root>
+    <title>Commander</title>
+    <First-name>Jane</First-name>
+    <Middle-name></Middle-name>
+    <Last-name>Shepard</Last-name>
+    <Species>Human</Species>
+    <Sex>Female</Sex>
+    <Born>Aprill 11, 2154</Born>
+    <Age>29</Age>
+    <Age_Note>Missing 2 years due to death, should be 31.5</Age_Note>
+    <Still-Alive>
+        <true />
+    </Still-Alive>
+    <Birth-Place>Earth</Birth-Place>
+    <Parents>Unknown, raised in UNAS Orphanage until age of fifteen.</Parents>
+    <Sibling>
+        <null />
+    </Sibling>
+    <Appearance>
+        <Height>5&apos;9&quot;</Height>
+        <Hair-Color>Mahogany</Hair-Color>
+        <Eye-Color>Light Grey</Eye-Color>
+        <Skin-Tone>Medium Fair</Skin-Tone>
+        <Shoe-Size>39</Shoe-Size>
+        <Scars>
+            <false />
+        </Scars>
+    </Appearance>
+    <Religious-Preference>Non-denominational</Religious-Preference>
+    <Philosophical-Ideas>Life is shit. It&apos;s those that can push past the shit barrier that make it in this universe as true leaders, instead of just being another sheep in our growing herd. There is no afterlife, just this one chance to make our mark on the world/s, so use it wisely and keep trying. Remember that the only person stopping you from reaching the top is yourself, and yourself alone. It&apos;s not your teachers, superiors, friends, parents, whoever. Just you. So stop over analyzing every little thing you do, and get your ass out there and do something!</Philosophical-Ideas>
+    <Favorites>
+        <Color>Turquoise</Color>
+        <Scent>Cut grass after a heavy rain</Scent>
+        <Number>42</Number>
+        <Food>MRE Menu #19: Pot Roast w/Vegetables (Taken from surveillance footage during Basic Training: &quot;Pot roast, pound cake, peanut butter, and chocolate! Epic win!&quot;)</Food>
+    </Favorites>
+    <Education>
+        <High-School-GPA>2</High-School-GPA>
+        <High-School-Note>Claimed that school was boring and a waist of her time.</High-School-Note>
+        <ASVAB-Score>75</ASVAB-Score>
+        <ASVAB-Score-Note>&quot;I&apos;m not stupid,&quot;, Shepard justifying her score to Alliance Recruter. &quot;I just got bored in school. I already knew hald the shit they were spewing and repeating over and over again. If they wanted to be lazy while teachin, I could be lazy with listening. Besided, all the inf was in the text.&quot;</ASVAB-Score-Note>
+    </Education>
+    <Alliance-Affiliation>
+        <Joined>April 12, 2172</Joined>
+        <Service-No>5923-AC&apos;2826 &amp;N7</Service-No>
+        <Pre-Alliance-History>Little is known about Shepard before she joined the Alliance. What is known is that she was a part of a group called the Reds while on Earth. She was also a suspect for the murder of Alfred J. Phillips when she was 16. The charges were dropped due to the murder being committed in self defiance to prevent her own rape. When she reached age 18, all accounts of the incident were expunged from her record. (Footage and record of file here.)</Pre-Alliance-History>
+        <Reasons-for-Joining-Alliance>Footage taken from Alliance Recruitment Station: Shepard sitting across from Recruiter while discussing a career with the Alliance, &quot;I could lie to you and tell you that I want structure in my life, as well as the opportunity to interact with different species from all across the galaxy; but really, I just want something that guarantees me a hot meal three times a day. I&apos;ve been living on half eaten paste tubes for the past three years. Actual food would be welcome. Combine that with weapon and hand-to-hand combat training, who could say no to the Alliance?&quot;</Reasons-for-Joining-Alliance>
+    </Alliance-Affiliation>
+    <Profile>
+        <Class>Infiltrator (Quoted saying, &quot;I cannot lie, I like big guns.&quot;)</Class>
+        <Alliance-Psychological-Profile>
+            <Early-Enlistment>Taken from datapad of one, Robert J. Yerkes, &quot;Miss. Shepard is eager to prove and further herself in every way she can. She has proven to be assertive and a natural leader. Yet, her DS mentioned to hearing her laugh hysterically at the firing range and during G-Training. When confronted on this, she commented that, &apos;This is the most fun I&apos;ve had in my entire life!&apos; She should be closely watched for possible mental instabilities.&quot;</Early-Enlistment>
+            <First-Mission-Post-Basics>Sole Survivor, due to thresher maw attack in a small colony on Akuze; 2177, Age: 23. (Taken from vid with therapist about incident: &quot;After my panic gave way to adrenalin, I just unloaded as many rounds into the thing as I could and hoped for the best. Oh, and a grenade launcher and some rockets helped, a-lot.&quot;)</First-Mission-Post-Basics>
+            <Personality>Compromiser; only slightly more Paragon than Renegade. (Loyal to the Alliance and her crew, everyone else is seen as fair game regardless of gender. Other note: She refuses to harm children, even if said children are sent to kill her. This does not mean she will lie down, &quot;maiming is not the same as killing.&quot; Shepard also has issues with people who do not take her seriously. Refer to footage taken during Council interactions.)</Personality>
+        </Alliance-Psychological-Profile>
+        <Spectre-Status>Appointed the first Human Spectre in 2183; Age: 29. Revoked later that year due to death. Reinstated in 2185.</Spectre-Status>
+        <Achievements>Graduated with the highest marks in Basic, AIT, and N7 training on record, Survived a thresher maw attack on Akuze , First Human Specter, Saved Council during fight with Sovren (reasoning for this: &quot;It&apos;s easier to save a few morons than it is to listen to thousands more, for years, as they compete for the position.&quot;), Savior of the Citadel, and took out a Collector base without losing anyone in her squad or crew.</Achievements>
+        <Special-Talents>Has an impressive memory for memorizing a battlefield and using it to her advantage within seconds of engaging an enemy. Also has a knack for mechanical functioning and maintenance.</Special-Talents>
+        <Death>KIA in 2183 due to Collector contact. Cerberus brought her back to life with the Lazarus Project in 2185.</Death>
+    </Profile>
+    <Armor-Used-to-Date>
+        <list size="7">
+            <list-item index="096">
+                <true />
+            </list-item>
+            <list-item index="097">Sentry Interface</list-item>
+            <list-item index="098">Capacitor Chestplate</list-item>
+            <list-item index="099">Asymetric Defense Layer</list-item>
+            <list-item index="100">Off-Hand Ammo Pack</list-item>
+            <list-item index="101">Ordinance Packs</list-item>
+            <list-item index="102">
+                <Name>Armor Coloring</Name>
+                <Primary>Black</Primary>
+                <Secondary>Deep Maroon</Secondary>
+                <Trim>Red</Trim>
+                <Note>When asked &quot;why&quot; on color scheme: &quot;So, the blood stains aren&apos;t so vibrant? Duh.&quot;</Note>
+            </list-item>
+        </list>
+    </Armor-Used-to-Date>
+    <Weapons-Used-to-Date>
+        <list size="6">
+            <list-item index="096">
+                <Type>Heavy Pistol</Type>
+                <Name>M-6 Carnifex</Name>
+                <Note>
+                    <null />
+                </Note>
+            </list-item>
+            <list-item index="097">
+                <Type>Heavy Weapon</Type>
+                <Name>Collector Particle Beam</Name>
+                <Note>Third favorite weapon.</Note>
+            </list-item>
+            <list-item index="098">
+                <Type>Shotgun</Type>
+                <Name>M-300 Claymore</Name>
+                <Note>
+                    <null />
+                </Note>
+            </list-item>
+            <list-item index="099">
+                <Type>Sniper Rifle</Type>
+                <Name>M-98 Widow</Name>
+                <Note>Favorite weapon</Note>
+            </list-item>
+            <list-item index="100">
+                <Type>Submachine Gun</Type>
+                <Name>M-12 Locust</Name>
+                <Note>Second favorite weapon</Note>
+            </list-item>
+            <list-item index="101">
+                <null />
+            </list-item>
+        </list>
+    </Weapons-Used-to-Date>
+</root>

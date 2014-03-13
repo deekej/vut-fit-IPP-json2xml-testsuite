@@ -52,6 +52,8 @@ REGEX=                # Extended regular expression specifying the directory.
 SCRIPT=$0             # Assigning script name to global variable 'cause function
                       # in ksh doesn't see the $0 variable
 
+export ROOT_PATH="$(pwd)"
+
 
 ################################################################################
 ### FUNCTIONS DEFINITIONS

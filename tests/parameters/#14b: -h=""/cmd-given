@@ -1,0 +1,14 @@
+#!/bin/bash
+php "$ROOT_PATH"/jsn.php -h="" < "$ROOT_PATH"/data/parameters/minimal-json > script-output
+
+RET_VAL=$?
+
+if [[ $RET_VAL -gt 0 ]]; then
+  echo "The script should allow empty string for substitution!"
+else
+  echo "OK"
+  rm -f script-output
+fi
+
+exit $RET_VAL
+

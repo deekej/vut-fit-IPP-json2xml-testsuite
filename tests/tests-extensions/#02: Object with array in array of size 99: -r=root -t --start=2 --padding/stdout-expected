@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <pole>
+        <array>
+            <item index="2">
+                <array>
+                    <item index="002" value="string1" />
+                    <item index="003" value="string2" />
+                    <item index="004" value="string3" />
+                    <item index="005" value="string4" />
+                    <item index="006" value="string5" />
+                    <item index="007" value="string6" />
+                    <item index="008" value="string7" />
+                    <item index="009" value="string8" />
+                    <item index="010" value="string9" />
+                    <item index="011" value="string10" />
+                    <item index="012" value="string11" />
+                    <item index="013" value="string12" />
+                    <item index="014" value="string13" />
+                    <item index="015" value="string14" />
+                    <item index="016" value="string15" />
+                    <item index="017" value="string16" />
+                    <item index="018" value="string17" />
+                    <item index="019" value="string18" />
+                    <item index="020" value="string19" />
+                    <item index="021" value="string20" />
+                    <item index="022" value="string21" />
+                    <item index="023" value="string22" />
+                    <item index="024" value="string23" />
+                    <item index="025" value="string24" />
+                    <item index="026" value="string25" />
+                    <item index="027" value="string26" />
+                    <item index="028" value="string27" />
+                    <item index="029" value="string28" />
+                    <item index="030" value="string29" />
+                    <item index="031" value="string30" />
+                    <item index="032" value="string31" />
+                    <item index="033" value="string32" />
+                    <item index="034" value="string33" />
+                    <item index="035" value="string34" />
+                    <item index="036" value="string35" />
+                    <item index="037" value="string36" />
+                    <item index="038" value="string37" />
+                    <item index="039" value="string38" />
+                    <item index="040" value="string39" />
+                    <item index="041" value="string40" />
+                    <item index="042" value="string41" />
+                    <item index="043" value="string42" />
+                    <item index="044" value="string43" />
+                    <item index="045" value="string44" />
+                    <item index="046" value="string45" />
+                    <item index="047" value="string46" />
+                    <item index="048" value="string47" />
+                    <item index="049" value="string48" />
+                    <item index="050" value="string49" />
+                    <item index="051" value="string50" />
+                    <item index="052" value="string51" />
+                    <item index="053" value="string52" />
+                    <item index="054" value="string53" />
+                    <item index="055" value="string54" />
+                    <item index="056" value="string55" />
+                    <item index="057" value="string56" />
+                    <item index="058" value="string57" />
+                    <item index="059" value="string58" />
+                    <item index="060" value="string59" />
+                    <item index="061" value="string60" />
+                    <item index="062" value="string61" />
+                    <item index="063" value="string62" />
+                    <item index="064" value="string63" />
+                    <item index="065" value="string64" />
+                    <item index="066" value="string65" />
+                    <item index="067" value="string66" />
+                    <item index="068" value="string67" />
+                    <item index="069" value="string68" />
+                    <item index="070" value="string69" />
+                    <item index="071" value="string70" />
+                    <item index="072" value="string71" />
+                    <item index="073" value="string72" />
+                    <item index="074" value="string73" />
+                    <item index="075" value="string74" />
+                    <item index="076" value="string75" />
+                    <item index="077" value="string76" />
+                    <item index="078" value="string77" />
+                    <item index="079" value="string78" />
+                    <item index="080" value="string79" />
+                    <item index="081" value="string80" />
+                    <item index="082" value="string81" />
+                    <item index="083" value="string82" />
+                    <item index="084" value="string83" />
+                    <item index="085" value="string84" />
+                    <item index="086" value="string85" />
+                    <item index="087" value="string86" />
+                    <item index="088" value="string87" />
+                    <item index="089" value="string88" />
+                    <item index="090" value="string89" />
+                    <item index="091" value="string90" />
+                    <item index="092" value="string91" />
+                    <item index="093" value="string92" />
+                    <item index="094" value="string93" />
+                    <item index="095" value="string94" />
+                    <item index="096" value="string95" />
+                    <item index="097" value="string96" />
+                    <item index="098" value="string97" />
+                    <item index="099" value="string98" />
+                    <item index="100" value="string99" />
+                </array>
+            </item>
+        </array>
+    </pole>
+</root>
